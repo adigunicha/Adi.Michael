@@ -61,7 +61,7 @@ const Contact = () => {
                    <div>
                    <motion.div  initial={{y:'80%'}} transition={transition1}   animate={{y:0}} className="flex   gap-6 flex-col">
                     <span className="font-primary font-medium text-2xl">LET'S TALK</span>
-                    <span className="font-medium text-lg">Adigunmichael818@gmail.com</span>
+                    <span className="font-medium text-lg">adigunmichael818@gmail.com</span>
                     <span className="font-medium text-lg"> (+234) 704 559 0112 </span>
                     <div className=" md:pt-5 flex space-x-5">
                             <Link to='https://github.com/adigunicha?tab=repositories'><FaGithub className="md:h-[25px] md:w-[20px]"/></Link>

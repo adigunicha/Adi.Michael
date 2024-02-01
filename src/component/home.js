@@ -18,7 +18,7 @@ const Home = () => {
     return ( 
         <motion.section  initial={{opacity:0}} transition={transition1}  animate={{opacity:1}}
       className={`${darkmode ? "bg-black text-white" : "bg-white text-black "}   font-secondary pt-[100px] pb-5  px-[10px] md:pt-[200px] lg:pl-[100px]`}>
-            <div className="flex lg:grid lg:grid-cols-2  flex-col-reverse">
+            <div className="flex lg:grid lg:grid-cols-2 lg:gap-2  flex-col-reverse">
                 <motion.div initial={{opacity:0,y:'-50%'}} animate={{opacity:1,y:0}} transition={transition1} className="flex mt-10 lg:mt-0  gap-5 flex-col">
                     <div className="flex gap-3 md:gap-5 items-center"><span className=" text-2xl md:text-3xl">Hello</span><MdWavingHand size={30} /></div>
                     <div><span className=" font-primary font-bold text-4xl md:text-5xl">I'm Adigun Michael</span> </div>
