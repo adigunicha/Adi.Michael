@@ -3,9 +3,10 @@
 @tailwind utilities;
 @layer components{
     body{
-        @apply overflow-x-hidden h-full ;
+        @apply overflow-x-hidden;
         margin: 0px;
         padding: 0px;
+        box-sizing: border-box;
 
     }
 }
