@@ -7,7 +7,7 @@ import { Darkmode } from "../App";
 const About = () => {
     const {darkmode} = useContext(Darkmode)
     return ( 
-        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] md:pl-[100px]`}>
+        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] lg:pl-[100px]`}>
                 <motion.div initial={{opacity:0,y:'-50%'}} animate={{opacity:1,y:0}} transition={transition1} >
                 <div className="flex border-b-2 mr-5 border-gray-200 pb-5 md:pb-10 md:gap-5 gap-3 items-center">
                    <span> <RxLaptop size={30} className=""/> </span>
@@ -23,7 +23,7 @@ const About = () => {
                 <div className="flex justify-center md:justify-normal items-center mt-5 md:mt-8">
                     <span className="md:text-3xl text-2xl md:pl-5 pl-2 flex gap-5  items-center">Skills</span>
                 </div>
-                <div className="  md:pl-5 pl-2 md:pt-10 pt-5 grid gap-5 md:grid-cols-3">
+                <div className="  md:pl-5 pl-2 md:pt-10 pt-5 grid gap-5 lg:grid-cols-3">
                     <div>
                         <span className="md:text-2xl text-xl font-medium">Programming Languages</span>
                         <div className="md:grid  flex flex-wrap md:grid-cols-2 pt-5 gap-5 md:gap-8">

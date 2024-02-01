@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer components{
     body{
-        @apply overflow-x-hidden;
+        @apply overflow-x-hidden h-full ;
         margin: 0px;
         padding: 0px;
 

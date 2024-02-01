@@ -16,14 +16,14 @@ const Portfolio = () => {
     const [hover3,sethover3] = useState(false)
     const [hoverbtn,sethoverbtn] = useState(false)
     return (
-        <motion.section initial={{opacity:0,y:'50%'}} animate={{opacity:1,y:0}} transition={transition1} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary  pt-[100px] pb-3 px-[10px] md:pt-[160px] md:pl-[100px]`}>
+        <motion.section initial={{opacity:0,y:'50%'}} animate={{opacity:1,y:0}} transition={transition1} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary  pt-[100px] pb-3 px-[10px] md:pt-[160px] lg:pl-[100px]`}>
             <div className={ ` flex border-b-2 pr-5 border-gray-200 pb-5 md:pb-10 md:gap-5 gap-3 items-center`}>
                    <span> <FaRegFolderOpen size={30} className=""/> </span>
                     <span className="md:text-5xl text-3xl font-primary font-medium ">Portfolio</span>
                 </div>
-                <div className="grid pt-16 md:grid-cols-3 gap-5">
+                <div className="grid  pt-16 md:grid-cols-2 xl:grid-cols-3 lg:gap-5">
                    <div className="flex hover:cursor-pointer items-center justify-center gap-3 flex-col">
-                   <div onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}}  className="md:w-[400px] p-3 relative  md:h-[250px] w-[90vw]  md:mx-0 h-[250px] bg-black" >
+                   <div onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}}  className="lg:w-[400px] md:w-[350px] p-3 relative  md:h-[250px] w-[90vw]  md:mx-0 h-[250px] bg-black" >
                     <img  className="h-full w-full" src={Agency} alt="levelupagency"/>
                  <div className="flex justify-center ">
                     <div className={` ${hover ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
@@ -36,7 +36,7 @@ const Portfolio = () => {
                    </div> 
                    
                    <div className="flex hover:cursor-pointer items-center justify-center gap-3 flex-col">
-                   <div onMouseEnter={()=>{sethover2(true)}} onMouseLeave={()=>{sethover2(false)}} className="md:w-[400px] relative p-3 md:h-[250px] w-[90vw] h-[250px] bg-black" >
+                   <div onMouseEnter={()=>{sethover2(true)}} onMouseLeave={()=>{sethover2(false)}} className="lg:w-[400px] md:w-[350px] relative p-3 md:h-[250px] w-[90vw] h-[250px] bg-black" >
                    <img className="h-full w-full" src={Alinastudio} alt="levelupagency"/>
                    <div className="flex justify-center ">
                     <div className={` ${hover2 ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
@@ -49,7 +49,7 @@ const Portfolio = () => {
                    </div> 
 
                   <div className="flex hover:cursor-pointer justify-center items-center gap-3 flex-col">
-                   <div onMouseEnter={()=>{sethover3(true)}} onMouseLeave={()=>{sethover3(false)}} className="md:w-[400px] relative p-3 md:h-[250px] w-[90vw] h-[250px] bg-black" >
+                   <div onMouseEnter={()=>{sethover3(true)}} onMouseLeave={()=>{sethover3(false)}} className="lg:w-[400px] md:w-[350px] relative p-3 md:h-[250px] w-[90vw] h-[250px] bg-black" >
                    <img className="h-full w-full" src={webstore} alt="levelupagency"/>
                    <div className="flex justify-center ">
                     <div className={` ${hover3 ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
@@ -61,12 +61,12 @@ const Portfolio = () => {
                    <span className="  text-sm text-gray-400 ">REACT.JS , FRAMERMOTION , TAILWIND , REDUXTOOLKIT </span>
                    </div> 
                 </div>
-                <div className="flex flex-col md:flex-row md:items-center pt-20  justify-between">
+                <div className="flex flex-col lg:flex-row lg:items-center pt-20  justify-between">
                     <div className=" flex flex-col">
                        <span className=" font-semibold text-2xl">Let's talk</span>
                        <span className={`font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-500 ${darkmode ? "to-white" : "to-black"}  text-3xl md:text-6xl`}>About your next project</span>
                     </div>
-                    <div className=" mt-5 flex md:mt-0 md:pr-24">
+                    <div className=" mt-5 flex lg:mt-0 md:pr-24">
                     <Link to='/contact' onMouseEnter={()=>{sethoverbtn(true)}} onMouseLeave={()=>{sethoverbtn(false)}} className={`font-bold overflow-x-hidden border-2 ${darkmode ? "border-white" : "border-black"}   relative  flex items-center py-1 px-5 md:py-2 md:px-8 md:text-lg`}>
                           <span className={`${hoverbtn ? "text-white z-20" : "text-black "} ${darkmode ? "hidden" : null } `}>Get In Touch</span>
                           <span className={`${hoverbtn ? "text-black z-20" : "text-white "} ${darkmode ? null : "hidden" } `}>Get In Touch</span>

@@ -39,9 +39,9 @@ const Navbar = () => {
            </div>
           {/* this is the opened navbar */}
          
-          <div className={`${menubar ? "md:top-24 top-[70px]" :" -top-[100vh] "} z-30  p-0 h-[100vh] w-full overflow-y-auto  ${darkmode ? "bg-black " : "bg-white"} transition-all ease-linear duration-500 fixed `}>
+          <div className={`${menubar ? "lg:top-24 top-[70px]" :" -top-[100vh] "} z-30  p-0 h-[100vh] w-full  ${darkmode ? "bg-black " : "bg-white"} transition-all ease-linear duration-500 fixed `}>
                <div  className={` ${darkmode ? "text-white" : "text-black"} font-primary pt-10   flex w-full  justify-center`}>
-                  <div className="flex font-medium md:font-normal flex-col space-y-10 md:space-y-12 ">
+                  <div className="flex font-medium md:font-normal flex-col space-y-10 lg:space-y-12 ">
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/' className=" text-4xl hover:text-blue-400 transition-colors ease-in-out duration-300  md:text-6xl">Home</Link>
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/about' className=" hover:text-blue-400  transition-colors ease-in-out duration-300  text-4xl  md:text-6xl">About</Link>
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/portfolio' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-4xl  md:text-6xl">Portfolio</Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
                   </div>
                </div>
                {/* social icons */}
-            <div className=" md:pt-28 bottom-28 absolute w-full items-center justify-center  flex space-x-3">
+            <div className=" md:pt-28 bottom-28 absolute w-full items-center justify-center hidden xl:flex space-x-3">
                  <Link to="https://github.com/adigunicha?tab=repositories"><FaGithub color={darkmode ? "white" : null} size={20}/></Link>
                  <Link to='https://twitter.com/mike_milz_'><FaSquareXTwitter color={darkmode ? "white" : null}  size={20}/></Link>
                  <Link to='https://www.instagram.com/adigunmichael_'><FaInstagramSquare color={darkmode ? "white" : null}  size={20}/></Link>
