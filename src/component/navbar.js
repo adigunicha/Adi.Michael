@@ -40,7 +40,7 @@ const Navbar = () => {
           {/* this is the opened navbar */}
          
           <div className={`${menubar ? "lg:top-24 top-[70px]" :" -top-[100vh] "} z-30  p-0 h-screen w-full  ${darkmode ? "bg-black " : "bg-white"} transition-all ease-linear duration-500 fixed `}>
-               <div  className={` ${darkmode ? "text-white" : "text-black"} font-primary pt-10   flex w-full  justify-center`}>
+               <div  className={` ${darkmode ? "text-white" : "text-black"} font-primary pt-3   flex w-full  justify-center`}>
                   <div className="flex font-medium md:font-normal flex-col md:pt-0 pt-8 space-y-10 lg:space-y-12 ">
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/' className=" text-4xl hover:text-blue-400 transition-colors ease-in-out duration-300  lg:text-6xl">Home</Link>
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/about' className=" hover:text-blue-400  transition-colors ease-in-out duration-300  text-4xl  lg:text-6xl">About</Link>

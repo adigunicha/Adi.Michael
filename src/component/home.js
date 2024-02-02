@@ -79,7 +79,7 @@ const Home = () => {
                             <Link to="https://www.linkedin.com/in/adigun-michael-0919a0219/"><FaLinkedin className="md:h-[30px] md:w-[25px]"/></Link>
                          </div>
                 </motion.div>
-                 <motion.div  initial={{scale:0,}}  animate={{scale:1}} transition={transition1} whileHover={{scale:1.06}} className="  md:mt-[-100px]">
+                 <motion.div  initial={{scale:0,}}  animate={{scale:1}} transition={transition1} whileHover={{scale:1.03}} className="  md:mt-[-100px]">
                   <img className=" md:h-[650px] w-full " src={img} alt="heropics"/>
                  </motion.div>
             </div>

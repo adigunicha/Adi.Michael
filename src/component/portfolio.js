@@ -27,8 +27,8 @@ const Portfolio = () => {
                     <img  className="h-full w-full" src={Agency} alt="levelupagency"/>
                  <div className="flex justify-center ">
                     <div className={` ${hover ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
-                     <Link to="https://level-up-agency.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
-                     <Link to="https://github.com/adigunicha/LevelUPAgency" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
+                     <Link target="_blank" to="https://level-up-agency.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
+                     <Link target="_blank" to="https://github.com/adigunicha/LevelUPAgency" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
                     </div></div>  
                    </div>
                    <span className="text-2xl  font-medium">LevelUp Agency</span>
@@ -40,8 +40,8 @@ const Portfolio = () => {
                    <img className="h-full w-full" src={Alinastudio} alt="levelupagency"/>
                    <div className="flex justify-center ">
                     <div className={` ${hover2 ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
-                     <Link to='https://alina-studio.vercel.app/' className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
-                     <Link to="https://github.com/adigunicha/AlinaStudio" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
+                     <Link target="_blank" to='https://alina-studio.vercel.app/' className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
+                     <Link target="_blank" to="https://github.com/adigunicha/AlinaStudio" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
                     </div></div>  
                    </div>
                    <span className="text-2xl font-medium">AlinaStudio</span>
@@ -53,8 +53,8 @@ const Portfolio = () => {
                    <img className="h-full w-full" src={webstore} alt="levelupagency"/>
                    <div className="flex justify-center ">
                     <div className={` ${hover3 ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
-                     <Link to="https://m-ike-webstore-git-main-michaels-projects-5d169dcd.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
-                     <Link to="https://github.com/adigunicha/MIke_webstore" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
+                     <Link target="_blank" to="https://m-ike-webstore-git-main-michaels-projects-5d169dcd.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
+                     <Link target="_blank" to="https://github.com/adigunicha/MIke_webstore" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
                     </div></div>  
                    </div>
                    <span className="text-2xl font-medium">Webstore</span>
