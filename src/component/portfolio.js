@@ -53,7 +53,7 @@ const Portfolio = () => {
                    <img className="h-full w-full" src={webstore} alt="levelupagency"/>
                    <div className="flex justify-center ">
                     <div className={` ${hover3 ? "flex" : "hidden"} absolute z-20 gap-5  justify-center h-full backdrop-blur-sm w-full items-center bottom-0`}>
-                     <Link target="_blank" to="https://m-ike-webstore-git-main-michaels-projects-5d169dcd.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
+                     <Link target="_blank" to="https://m-ike-webstore.vercel.app/" className="bg-black p-3 rounded-full " ><FaLink color="white" size={25} /></Link> 
                      <Link target="_blank" to="https://github.com/adigunicha/MIke_webstore" className="bg-black p-3 rounded-full "> <FaGithub color="white" size={25}/> </Link> 
                     </div></div>  
                    </div>
