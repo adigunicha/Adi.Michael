@@ -56,7 +56,7 @@ const Home = () => {
                           </Link> 
 
                           {/* resume button */}
-                          <Link to='/portfolio' onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}} className={`font-bold overflow-x-hidden border-2 relative  flex items-center ${darkmode ? "bg-black border-white" : "bg-white border-black "}  py-1 px-5 md:py-2 md:px-8 md:text-lg`}>
+                          <Link to='/Resume[1].pdf' target="_blank" onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}} className={`font-bold overflow-x-hidden border-2 relative  flex items-center ${darkmode ? "bg-black border-white" : "bg-white border-black "}  py-1 px-5 md:py-2 md:px-8 md:text-lg`}>
 
                           {/* whitemode text */}
                           <span className={` ${darkmode ? "hidden" : null} z-20 ${hover ? "text-white z-20" : "text-black"}`}> Resume 
