@@ -21,7 +21,7 @@ const Portfolio = () => {
                    <span> <FaRegFolderOpen size={30} className=""/> </span>
                     <span className="md:text-5xl text-3xl font-primary font-medium ">Portfolio</span>
                 </div>
-                <div className="grid items-center  pt-16 md:grid-cols-2 xl:grid-cols-3 lg:gap-5">
+                <div className="grid items-center  pt-16 md:grid-cols-2 lg:grid-cols-2  lg:gap-5">
                    <div className="flex hover:cursor-pointer items-center justify-center gap-3 flex-col">
                    <div onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}}  className="lg:w-[400px] md:w-[350px] p-3 relative  md:h-[250px] w-[90vw]  md:mx-0 h-[250px] bg-black" >
                     <img  className="h-full w-full" src={Agency} alt="levelupagency"/>

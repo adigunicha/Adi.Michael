@@ -10,7 +10,10 @@ import img from './img/BL 40.jpg'
 import { transition1 } from "./transition";
 import { useState } from "react";
 import { useContext } from "react";
+import { FaDiscord } from "react-icons/fa";
 import { Darkmode } from "../App";
+import { IoLogoDiscord } from "react-icons/io5";
+
 
 const Home = () => {
   const [hover,sethover] = useState(false)
@@ -18,15 +21,15 @@ const Home = () => {
     return ( 
         <motion.section  initial={{opacity:0}} transition={transition1}  animate={{opacity:1}}
       className={`${darkmode ? "bg-black text-white" : "bg-white text-black "}    font-secondary pt-[100px] pb-5  px-[10px] md:pt-[200px] lg:pl-[100px]`}>
-            <div className="flex lg:grid lg:grid-cols-2 lg:gap-2  flex-col-reverse">
-                <motion.div initial={{opacity:0,y:'-50%'}} animate={{opacity:1,y:0}} transition={transition1} className="flex mt-10 lg:mt-0  gap-5 flex-col">
+            <div className="flex lg:grid lg:grid-cols-2 lg:gap-7  flex-col-reverse">
+                <motion.div initial={{opacity:0,y:'-50%'}} animate={{opacity:1,y:0}} transition={transition1} className="flex mt-10 lg:-mt-2  gap-5 flex-col">
                     <div className="flex gap-3 md:gap-5 items-center"><span className=" text-2xl md:text-3xl">Hello</span><MdWavingHand size={30} /></div>
                     <div><span className=" font-primary font-bold text-4xl md:text-5xl">I'm Adigun Michael</span> </div>
                     <div>
                         <span className="font-semibold z-0 text-xl md:text-3xl">
                         <Typewriter
                           options={{
-                           strings: ["I'm a Frontend developer","I develop responsive website","I build beautiful design experience"],
+                           strings: ["I'm a Frontend developer",,"I build beautiful design experience","I'm a collab manager","I'm a community moderator "],
                            autoStart: true,
                             loop: true,
                             deleteSpeed:65,
@@ -36,7 +39,9 @@ const Home = () => {
                       </div>
                       <div>
                         <span className="  md:text-xl">
-                        i'm a Frontend developer with a strong passion for building web applications with great user experiences,and making the web accessible to everyone.
+                        i'm a Frontend developer with a strong passion for building web applications with great user experiences, and making the web accessible to everyone.
+                        <div className="pt-5">
+                        Alpha hunting for the latest web3 Projects. Let's connect and create magic together!✨</div> 
                         </span>
                       </div>
                       <div className="flex items-center gap-5">
@@ -77,6 +82,7 @@ const Home = () => {
                             <Link to="https://twitter.com/mike_milz_"><FaSquareXTwitter className="md:h-[30px] md:w-[25px]"/></Link>
                             <Link to="https://www.instagram.com/adigunmichael_"><FaInstagramSquare className="md:h-[30px] md:w-[25px]"/></Link>
                             <Link to="https://www.linkedin.com/in/adigun-michael-0919a0219/"><FaLinkedin className="md:h-[30px] md:w-[25px]"/></Link>
+                            <Link to="https://www.linkedin.com/in/adigun-michael-0919a0219/"><IoLogoDiscord className="md:h-[30px] md:w-[25px]"/></Link>
                          </div>
                 </motion.div>
                  <motion.div  initial={{scale:0,}}  animate={{scale:1}} transition={transition1} whileHover={{scale:1.03}} className="  md:mt-[-100px]">

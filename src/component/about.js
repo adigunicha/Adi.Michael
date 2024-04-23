@@ -1,9 +1,17 @@
 import { RxLaptop } from "react-icons/rx";
 import { GiSkills } from "react-icons/gi";
+import { FaDiscord } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { transition1 } from "./transition";
 import { useContext } from "react";
 import { Darkmode } from "../App";
+import { TbBuildingCommunity } from "react-icons/tb";
+import { GrUserManager } from "react-icons/gr";
+import { TfiLayoutMediaRight } from "react-icons/tfi";
+import { LiaToolsSolid } from "react-icons/lia";
+import { PiTestTubeDuotone } from "react-icons/pi";
+import { PiPencilSimpleLineDuotone } from "react-icons/pi";
+
 const About = () => {
     const {darkmode} = useContext(Darkmode)
     return ( 
@@ -14,14 +22,15 @@ const About = () => {
                     <span className="md:text-5xl text-3xl font-primary font-medium ">About Me</span>
                 </div>
                 <div className="md:p-5 p-2 ">
-                     <span className="md:text-lg">Hello! i'm Michael, from Lagos Nigeria. I'm a young passionate, dedicated and eager to learn frontend developer with a strong intrest in creating and engaging an intuitive user experience. I have developed a deep understanding of web technologies and a knack for translating design concepts into beautiful and function websites. With a focus on providing effective solutions to individuals and small businesses in a timely manner. I am confident in my ability to thrive as a solution-driven Frontend developer capable of delivering high quality results.</span>
+                     <span className="md:text-lg">Hello! i'm Michael, from Lagos Nigeria. I'm a young passionate, dedicated and eager to learn developer with a strong intrest in creating and engaging an intuitive user experience and keen interest in the possibilities of Web3 and blockchain technologies.I have developed a deep understanding of web (web2 & web3) technologies and a knack for translating design concepts into beautiful and function websites. With a focus on providing effective solutions to individuals and small businesses in a timely manner. I am confident in my ability to thrive as a solution-driven developer capable of delivering high quality results. My goal is to leverage my skills and knowledge to contribute to the exciting future of Web3 applications and experiences.
+                    </span>
                 </div>
                 </motion.div>
 
                 {/* skill */}
                 <motion.div initial={{opacity:0,y:'50%'}} animate={{opacity:1,y:0}}  transition={transition1}  className="pb-5">
                 <div className="flex justify-center md:justify-normal items-center mt-5 md:mt-8">
-                    <span className="md:text-3xl text-2xl md:pl-5 pl-2 flex gap-5  items-center">Skills</span>
+                    <span className="md:text-3xl text-2xl md:pl-5 pl-2 flex gap-5  items-center">Web 2.0 Skills</span>
                 </div>
                 <div className="  md:pl-5 pl-2 md:pt-10 pt-5 grid gap-5 lg:grid-cols-3">
                     <div>
@@ -91,7 +100,7 @@ const About = () => {
                        </div>
                        <div className="flex gap-3 items-center">
                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32"><path fill="#007acc" d="m11.72 18.685l-6.883 5.184L2 22.922L9 16L2 9.077l2.837-.947l6.883 5.184l11.433-11.3L30 4.922v22.155l-6.847 2.909ZM15.287 16l7.865 5.923V10.076Z"/></svg>
-                        <span>Vs code</span>
+                        <span className="font-medium text-lg">Vs code</span>
                        </div>
                        <div className="flex gap-3 items-center">
                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"  fill={darkmode ? "white" : "black"}  viewBox="0 0 128 128"><path d="M64.002 8.576L128 119.424H0Zm0 0"/></svg>
@@ -99,8 +108,40 @@ const About = () => {
                        </div>
                        <div className="flex gap-3 items-center">
                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.5em" viewBox="0 0 256 384"><path fill="#0ACF83" d="M64 384c35.328 0 64-28.672 64-64v-64H64c-35.328 0-64 28.672-64 64s28.672 64 64 64"/><path fill="#A259FF" d="M0 192c0-35.328 28.672-64 64-64h64v128H64c-35.328 0-64-28.672-64-64"/><path fill="#F24E1E" d="M0 64C0 28.672 28.672 0 64 0h64v128H64C28.672 128 0 99.328 0 64"/><path fill="#FF7262" d="M128 0h64c35.328 0 64 28.672 64 64s-28.672 64-64 64h-64z"/><path fill="#1ABCFE" d="M256 192c0 35.328-28.672 64-64 64s-64-28.672-64-64s28.672-64 64-64s64 28.672 64 64"/></svg>
-                        <span>Figma</span>
+                        <span className="font-medium text-lg">Figma</span>
                        </div>
+                        </div>
+                    </div>
+                    
+                    <div className="md:pt-0 pt-5 ">
+                    <span className="md:text-3xl text-2xl md:pl-5 pl-2 flex gap-5  items-center">Web 3.0 Skills</span>
+                        <div  className="md:grid flex flex-wrap md:grid-cols-2 pt-5 gap-5 md:gap-8">
+                        <div className="flex gap-3 items-center">
+                        <TbBuildingCommunity/>
+                       <span className="font-medium text-lg">Community Moderator</span>
+                       </div>
+                       <div className="flex gap-3 items-center">
+                        <GrUserManager  className=""/>
+                        <span className="font-medium text-lg">Collab Manager</span>
+                       </div>
+                       <div className="flex gap-3 items-center">
+                        <TfiLayoutMediaRight/>
+                       <span className="font-medium text-lg">Social Media Manager</span>
+                       </div>
+                       <div className="flex gap-3 items-center">
+                       <LiaToolsSolid/>
+                        <span className="font-medium text-lg">Alpha Huntering</span>
+                       </div>
+                       <div className="flex gap-3 items-center">
+                       <PiTestTubeDuotone/>
+                        <span className="font-medium text-lg">Beta Testing</span>
+                       </div>
+                       <div className="flex gap-3 items-center">
+                       <PiPencilSimpleLineDuotone/>
+                        <span className="font-medium text-lg">Technical Writing</span>
+                       </div>
+                       
+                       
                         </div>
                     </div>
                 </div>
