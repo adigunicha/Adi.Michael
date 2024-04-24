@@ -44,9 +44,9 @@ const Navbar = () => {
                   <div className="flex font-medium md:font-normal flex-col md:pt-5 pt-14 space-y-10 lg:space-y-12 ">
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/' className=" text-3xl hover:text-blue-400 transition-colors ease-in-out duration-300  lg:text-4xl">Home</Link>
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/about' className=" hover:text-blue-400  transition-colors ease-in-out duration-300  text-3xl  lg:text-4xl">About</Link>
-                    <Link onClick={()=>{Setmenubar(!menubar)}} to='/contact' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-3xl  lg:text-4xl">Blog</Link>
+                    <Link onClick={()=>{Setmenubar(!menubar)}} to='/blog' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-3xl  lg:text-4xl">Blog</Link>
                     <Link onClick={()=>{Setmenubar(!menubar)}} to='/portfolio' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-3xl  lg:text-4xl">Portfolio</Link>
-                    <Link onClick={()=>{Setmenubar(!menubar)}} to='/contact' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-3xl  lg:text-4xl">Contact</Link>
+                    <Link onClick={()=>{Setmenubar(!menubar)}} to='/contact' className=" hover:text-blue-400 transition-colors ease-in-out duration-300 text-3xl  z-40 lg:text-4xl">Contact</Link>
                     
                   </div>
                </div>

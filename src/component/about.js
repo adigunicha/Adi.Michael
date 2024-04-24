@@ -26,7 +26,7 @@ const About = () => {
                     </span>
                 </div>
                 </motion.div>
-
+                
                 {/* skill */}
                 <motion.div initial={{opacity:0,y:'50%'}} animate={{opacity:1,y:0}}  transition={transition1}  className="pb-5">
                 <div className="flex justify-center md:justify-normal items-center mt-5 md:mt-8">
@@ -130,11 +130,11 @@ const About = () => {
                        </div>
                        <div className="flex gap-3 items-center">
                        <LiaToolsSolid/>
-                        <span className="font-medium text-lg">Alpha Huntering</span>
+                        <span className="font-medium text-lg">Alpha Hunter</span>
                        </div>
                        <div className="flex gap-3 items-center">
                        <PiTestTubeDuotone/>
-                        <span className="font-medium text-lg">Beta Testing</span>
+                        <span className="font-medium text-lg">Beta Tester</span>
                        </div>
                        <div className="flex gap-3 items-center">
                        <PiPencilSimpleLineDuotone/>
