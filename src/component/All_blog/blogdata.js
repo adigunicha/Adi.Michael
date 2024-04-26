@@ -8,7 +8,7 @@ let BlogData = [
         Author:'Michael',
         Date: "April 20,2024",
         Img : Grassimgs,
-        Category:"Marketing",
+        Category:"Airdrop",
         ReadTime:"5 min",   
         Title:"Potential Grass Airdrop",
 
@@ -64,7 +64,7 @@ let BlogData = [
         Author:'Michael',
         Date: "March 8,2005",
         Img : BoredApe,
-        Category:"Blockchain",
+        Category:"NFT",
         ReadTime:"8 min",   
         Title:"NFT",
 
