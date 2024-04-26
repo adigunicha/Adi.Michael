@@ -17,12 +17,11 @@ const Navbar = () => {
     }
     const handledarkmode = ()=>{
       setdarkmode(!darkmode)
-      console.log(darkmode)
     }
     return ( 
         <section className="">
         <div className={` ${darkmode ? "bg-black" : "bg-white"} fixed z-50   w-full`}>
-           <nav className="flex shadow-sm justify-between items-center md:p-10 p-5 ">
+           <nav className="flex shadow-sm justify-between items-center md:p-10 p-5 ">     
               <div>
                 <Link to='/' className=" font-primary font-bold text-2xl md:text-2xl"><span className=" text-blue-400">Adi</span><span className={`${darkmode ? "text-white" : "text-black"}`}>.Michael</span></Link>
               </div>

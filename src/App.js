@@ -5,7 +5,8 @@ import Home from "./component/home";
 import About from "./component/about";
 import Portfolio from "./component/portfolio";
 import Contact from "./component/contact";
-import Blog from "./component/blog"
+import Blog from "./component/All_blog/blog"
+import BlogDetails from "./component/All_blog/blogdetails";
 import { useLocation } from "react-router-dom";
 import { createContext,useState,useEffect } from "react";
 export const Darkmode = createContext()
@@ -33,7 +34,10 @@ function App() {
             <Route path="about" element={<About/>}/>
             <Route path="portfolio" element={<Portfolio/>}/>
             <Route path="contact" element={<Contact/>}/>
-            <Route path="blog" element={<Blog/>}/>
+            <Route path="blog">
+              <Route index element={<Blog/>}/>
+              <Route path=":id" element={<BlogDetails/>}/>
+            </Route>
              </Route>
           </Routes>
         </AnimatePresence>
