@@ -15,7 +15,7 @@ import { PiPencilSimpleLineDuotone } from "react-icons/pi";
 const About = () => {
     const {darkmode} = useContext(Darkmode)
     return ( 
-        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] lg:pl-[100px]`}>
+        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] lg:pl-[100px] min-h-[100vh]`}>
                 <motion.div initial={{opacity:0,y:'-50%'}} animate={{opacity:1,y:0}} transition={transition1} >
                 <div className="flex border-b-2 mr-5 border-gray-200 pb-5 md:pb-10 md:gap-5 gap-3 items-center">
                    <span> <RxLaptop size={30} className=""/> </span>

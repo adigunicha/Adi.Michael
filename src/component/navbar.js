@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className={` ${darkmode ? "bg-black" : "bg-white"} fixed z-50   w-full`}>
            <nav className="flex shadow-sm justify-between items-center md:p-10 p-5 ">     
               <div>
-                <Link to='/' className=" font-primary font-bold text-2xl md:text-2xl"><span className=" text-blue-400">Adi</span><span className={`${darkmode ? "text-white" : "text-black"}`}>.Michael</span></Link>
+                <Link to='/' className=" font-primary font-bold text-xl md:text-2xl"><span className=" text-blue-400">Adi</span><span className={`${darkmode ? " text-slate-300" : "text-black"}`}>.Michael</span></Link>
               </div>
               <div className="flex items-center gap-5 md:gap-10">
                {/* darkmode icon */}

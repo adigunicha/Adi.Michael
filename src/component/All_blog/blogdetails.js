@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const {darkmode} = useContext(Darkmode)
     let Data = BlogData.find((e)=>e.id===Number(id))
     return ( 
-        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] lg:pl-[100px]`}>
+        <motion.section  initial={{opacity:0}} transition={transition1}   animate={{opacity:1}} className={` ${darkmode ? "bg-black text-white" : "bg-white text-black"} font-secondary pt-[100px]  px-[10px] md:pt-[160px] lg:pl-[100px] min-h-[100vh]`}>
            <div className="flex flex-col py-5 gap-10 justify-center  lg:px-48">
               <div className="flex justify-center text-3xl font-semibold">{Data.Title}</div>
               <div className="flex justify-center tracking-wider text-[20px] ">{Data.Intro}</div>

@@ -33,7 +33,7 @@ const Contact = () => {
  };
 
     return ( 
-      <motion.div   initial={{opacity:0,y:'50%'}} transition={transition1} animate={{opacity:1,y:0}} className={`${darkmode ? "bg-black text-white" : "bg-white text-black"} overflow-x-hidden `} >
+      <motion.div   initial={{opacity:0,y:'50%'}} transition={transition1} animate={{opacity:1,y:0}} className={`${darkmode ? "bg-black text-white" : "bg-white text-black"} overflow-x-hidden min-h-[100vh]`} >
         <section className=" relative font-secondary pt-[100px] pb-3 px-[10px] md:pt-[160px] lg:pl-[100px]">
            <div className="flex  border-b-2 mr-5 border-gray-200 pb-5 md:pb-10 md:gap-5 gap-3 items-center">
                    <span> <IoCall size={30} className=""/> </span>
