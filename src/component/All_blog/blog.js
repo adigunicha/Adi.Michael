@@ -14,7 +14,7 @@ const Blog = () => {
             {reversedBlogData.map((ele)=>(
             <did className="flex gap-5 w-full  px-5 shadow-sm shadow-slate-100 items-center" key={ele.id}>
                 <div className=" flex flex-col w-[70%] md:w-[80%]  pb-8">
-                   <div className="flex flex-row items-center"> <Link to='/about' className="pl-1"><span className=" text-lg font-medium">{ele.Author}</span></Link>
+                   <div className="flex flex-row items-center"> <Link to='/about'><span className=" text-lg font-medium">{ele.Author}</span></Link>
                    <RxDotFilled color="gray"/>
                    <span className=" text-sm text-gray-400 ">{ele.Date}</span> 
                    </div>
