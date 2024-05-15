@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
-import img from './img/BL 40.jpg'
+import img from './img/micky profile-02.png'
 import { transition1 } from "./transition";
 import { useState } from "react";
 import { useContext } from "react";
@@ -29,7 +29,7 @@ const Home = () => {
                         <span className="font-semibold z-0 text-xl md:text-3xl">
                         <Typewriter
                           options={{
-                           strings: ["I'm a Frontend developer",,"I build beautiful design experience","I'm a collab manager","I'm a community moderator "],
+                           strings: ["I'm a Developer",,"I'm a Collab-manager","I'm a Community-manager","I'm a Community-moderator ", "I'm an Alpha-hunter"],
                            autoStart: true,
                             loop: true,
                             deleteSpeed:65,
@@ -39,7 +39,7 @@ const Home = () => {
                       </div>
                       <div>
                         <span className="  md:text-xl">
-                        i'm a Frontend developer with a strong passion for building web applications with great user experiences, and making the web accessible to everyone.
+                        i'm a Frontend developer, now I'm eager to expand my horizons as a community moderator and Web3 enthusiast, combining my technical expertise with a fervent interest in decentralized technologies and community building.
                         <div className="pt-5">
                         Alpha hunting for the latest web3 Projects. Let's connect and create magic together!✨</div> 
                         </span>

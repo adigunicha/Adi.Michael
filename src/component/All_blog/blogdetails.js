@@ -5,9 +5,9 @@ import { useContext } from "react";
 import { Darkmode } from "../../App";
 import BlogData from "./blogdata";
 const BlogDetails = () => {
-    const {id} = useParams()
+    const {title} = useParams()
     const {darkmode} = useContext(Darkmode)
-    let Data = BlogData.find((e)=>e.id===Number(id))
+    let Data = BlogData.find((e)=>e.Title === title)
     
     const renderContentWithHTML = (content) => {
         return <div dangerouslySetInnerHTML={{ __html: content }} />;
