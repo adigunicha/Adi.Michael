@@ -6,7 +6,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
-import img from './img/micky profile-02.png'
+import img from './img/BL 40.jpg'
 import { transition1 } from "./transition";
 import { useState } from "react";
 import { useContext } from "react";
@@ -29,7 +29,7 @@ const Home = () => {
                         <span className="font-semibold z-0 text-xl md:text-3xl">
                         <Typewriter
                           options={{
-                           strings: ["I'm a Developer",,"I'm a Collab-manager","I'm a Community-manager","I'm a Community-moderator ", "I'm an Alpha-hunter"],
+                           strings: ["I'm a Frontend Developer",,"I'm a Collab-manager","I'm a Community-manager","I'm a Community-moderator ", "I'm an Alpha-hunter"],
                            autoStart: true,
                             loop: true,
                             deleteSpeed:65,
@@ -39,7 +39,7 @@ const Home = () => {
                       </div>
                       <div>
                         <span className="  md:text-xl">
-                        i'm a Frontend developer, now I'm eager to expand my horizons as a community moderator and Web3 enthusiast, combining my technical expertise with a fervent interest in decentralized technologies and community building.
+                        i'm a Frontend developer, now I'm eager to expand my horizons as a community manager and Web3 enthusiast, combining my technical expertise with a fervent interest in decentralized technologies and community building.
                         <div className="pt-5">
                         Alpha hunting for the latest web3 Projects. Let's connect and create magic together!✨</div> 
                         </span>
@@ -61,7 +61,7 @@ const Home = () => {
                           </Link> 
 
                           {/* resume button */}
-                          <Link to='/Resume[1].pdf' target="_blank" onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}} className={`font-bold overflow-x-hidden border-2 relative  flex items-center ${darkmode ? "bg-black border-white" : "bg-white border-black "}  py-1 px-5 md:py-2 md:px-8 md:text-lg`}>
+                          <Link to='/Michael_Resume.pdf' target="_blank" onMouseEnter={()=>{sethover(true)}} onMouseLeave={()=>{sethover(false)}} className={`font-bold overflow-x-hidden border-2 relative  flex items-center ${darkmode ? "bg-black border-white" : "bg-white border-black "}  py-1 px-5 md:py-2 md:px-8 md:text-lg`}>
 
                           {/* whitemode text */}
                           <span className={` ${darkmode ? "hidden" : null} z-20 ${hover ? "text-white z-20" : "text-black"}`}> Resume 
@@ -82,7 +82,7 @@ const Home = () => {
                             <Link to="https://twitter.com/mike_milz_"><FaSquareXTwitter className="md:h-[30px] md:w-[25px]"/></Link>
                             <Link to="https://www.instagram.com/adigunmichael_"><FaInstagramSquare className="md:h-[30px] md:w-[25px]"/></Link>
                             <Link to="https://www.linkedin.com/in/adigun-michael-0919a0219/"><FaLinkedin className="md:h-[30px] md:w-[25px]"/></Link>
-                            <Link to="https://www.linkedin.com/in/adigun-michael-0919a0219/"><IoLogoDiscord className="md:h-[30px] md:w-[25px]"/></Link>
+                            <Link to="discordapp.com/users/1043470545678778449"><IoLogoDiscord className="md:h-[30px] md:w-[25px]"/></Link>
                          </div>
                 </motion.div>
                  <motion.div  initial={{scale:0,}}  animate={{scale:1}} transition={transition1} whileHover={{scale:1.03}} className="  md:mt-[-100px]">
